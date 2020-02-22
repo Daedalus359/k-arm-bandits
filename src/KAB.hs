@@ -1,0 +1,3 @@
+module KAB where
+
+testComp = "."

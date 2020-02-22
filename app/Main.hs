@@ -1,6 +1,8 @@
 module Main where
 
-import Lib
+import KAB
 
 main :: IO ()
-main = someFunc
+main = putStrLn testComp
+
+--withSystemRandom (genContVar g :: (Gen (PrimState IO) -> IO Double))

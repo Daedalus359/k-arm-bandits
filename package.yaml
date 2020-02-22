@@ -24,6 +24,10 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+    - statistics
+    - mwc-random
+    - primitive
 
 executables:
   k-arm-bandits-exe:
