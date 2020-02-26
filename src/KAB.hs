@@ -133,3 +133,8 @@ average nums = fmap (flip (/) (fromIntegral $ length nums)) $ foldr (zipWith (+)
 
 reportPerformance :: IO [Double]
 reportPerformance = fmap average runScenario
+
+f 0 = 0
+f n = nextDown + alpha * (1 - nextDown)
+  where
+    nextDown = f (n - 1)
